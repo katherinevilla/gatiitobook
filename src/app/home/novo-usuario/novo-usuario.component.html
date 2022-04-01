@@ -49,7 +49,7 @@
       mensagem="Usuario deve ser em letra minuscula"
     ></app-mensagem>
     <app-mensagem
-    *ngIf="novoUsuarioForm.get('userName')?.errors ?.['usuarioExistente']"
+    *ngIf="novoUsuarioForm.get('userName')?.errors?.['usuarioExistente']"
          mensagem="Usuario já existe"
     ></app-mensagem>
   </div>
