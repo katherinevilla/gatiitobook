@@ -10,7 +10,7 @@ export class NovoUsuarioService {
   constructor(private http:HttpClient) { }
 
   cadastraNovoUsuario(novoUsuario:Novousuario){
-    return this.http.post('http:localhost:3000/user/signup' , novoUsuario);
+    return this.http.post('http://localhost:3000/user/signup' , novoUsuario);
   }
   verificaUsuarioExistente(nomeUsuario:string){
 
