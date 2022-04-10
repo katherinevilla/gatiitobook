@@ -12,12 +12,13 @@ export class CabecalhoComponent implements OnInit {
 
   constructor(private usuarioService: UsuarioService, private router: Router) { }
 
+
+  ngOnInit(): void {
+  }
   logout(){
     this.usuarioService.logout();
     this.router.navigate(['']);
   }
 
-  ngOnInit(): void {
-  }
 
 }
